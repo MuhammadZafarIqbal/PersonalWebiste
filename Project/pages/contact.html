@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact - Details to contact me for feedback</title>
+    <link rel="icon" href="../images/favicon.jpg">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/contact.css" type="text/css">
+    <link rel="stylesheet" href="../bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" type="text/css">
+    <script src="../bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"> </script>
+
+    <script src="https://kit.fontawesome.com/2c85cbb7e2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body class="background-black-white" >
+    <header>
+        <div class="row justify-content-center">
+            <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" id="profile" >
+                <h2>Contact</h2>
+                <q>
+                    You are too poor or too paranoid if you can’t find a single person to speak your heart out to
+                    <!-- <br/> and keep scrolling up and down your contacts -->
+                </q>
+                <br/>
+                <cite >
+                    &mdash; n. m.
+                </cite>
+            </article>
+        </div>
+        <hr id="line" />
+    </header>
+
+
+    <button id="toggle-menu">
+        &equiv;
+    </button>
+
+    <nav>
+        <ul id = "menu">
+            <li> <a href="../index.html" target="_blank" > Welcome </a></li>
+            <li> <a href="./About_me.html" target="_blank"> About me </a> </li>
+            <li><a href="./Academics.html" target="_blank"> Academics </a></li>
+            <li><a href="./skills.html" target="_blank"> Skills </a> </li>
+            <li><a href="./gallery.html" target="_blank"> Gallery </a></li>
+            <li><a href="#" target="_blank" class="active"> Contact </a></li>
+        </ul>
+    </nav>
+
+    <div id="small-nav-show"> 
+        <div class="row">
+            <div class="small-navigation">
+                <div class="row">
+                    <div class="col-md-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="../index.html" target="_blank" class="small-navigation-menu-item"> Welcome </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="./About_me.html" target="_blank" class="small-navigation-menu-item"> About me </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="./Academics.html" target="_blank" class="small-navigation-menu-item"> Academics </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="./skills.html" target="_blank" class="small-navigation-menu-item"> Skills </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="./gallery.html" target="_blank" class="small-navigation-menu-item"> Gallery </a>
+                    </div>
+                </div>
+                <div class="row small-nav-active">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="./contact.html" target="_blank" class="small-navigation-menu-item"> Contact </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row justify-content-end">
+        <div class="col-lg-6 col-md-10 col-sm-12 col-xs-12">
+            <form action="mailto:bsvncs@inf.elte.hu" method="POST" enctype="text/plain" autocomplete="on">
+                <div class="row justify-content-center">
+                        <legend>
+                            <h3>Feedback</h3>
+                        </legend>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 align-self-end">
+                            <fieldset>
+                                <label for="fname">First Name</label><br/>
+                                <input type="text" id="fname" name="fname"  placeholder="Muhammad Zafar Iqbal"><br/>
+                                <label for="mail">Email</label><br/>
+                                <input type="email" id="mail" name="mail" placeholder="mymail@mail.com"><br/>
+                                <label for="feedback">Your Feedback</label><br/>
+                                <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea><br/>
+                            </fieldset>
+    
+                            <div class="large-screen-button">
+                                <input type="submit" id="submit" name="submit" value="Submit">
+                                <input type="reset" value=" Reset ">
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 align-self-start">
+                            <fieldset>
+                                <label for="lname">Last Name</label><br/>
+                            <input type="text" id="lname" name="lname" placeholder="Iqbal"> <br/>
+                            
+                            <label id="genderlabel" for="gender">Gender</label><br/>
+                            <input type="radio" id="male" name="gender" value="Male" checked>
+                            <label for="male">Male</label><br/>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label><br/>
+                            <input type="radio" id="others" name="gender" value="Others">
+                            <label for="others">Others</label><br/>
+        
+                            <label id="relationlabel" for="relation">How do you know me?</label><br/>
+                            <input type="checkbox" id="relation" name="relation" value="Bike">
+                            <label for="relation"> University Fellow</label><br/>
+                            <input type="checkbox" id="relation" name="relation" value="Car">
+                            <label for="relation"> School Fellow</label><br/>
+                            <input type="checkbox" id="relation" name="relation" value="Boat">
+                            <label for="relation"> Co-worker</label><br/>
+                            <input type="checkbox" id="relation" name="relation" value="Boat" checked>
+                            <label for="relation"> IT Professional</label><br/>
+                            <input type="checkbox" id="relation" name="relation" value="Boat">
+                            <label for="relation"> Others </label><br/>
+                            </fieldset>
+                            
+
+                            <div class="small-screen-button">
+                                <input type="submit" id="submit" name="submit" value="Submit">
+                                <input type="reset" value=" Reset ">
+                            </div>
+                        </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-lg-4 hidden-md hidden-sm hidden-xs text-center">
+            <aside>
+                <div class="verticalLine">
+                    <img src="../images/Contact_Profile_Picture.jpg" alt="A profile picture of a person" class = "rounded-circle" id = "contact_picture">
+                    <h5 class="p-md-3">
+                        Muhammad Zafar Iqbal <br/>Nazir
+                    </h5>
+                    <h5 class="p-md-1">
+                        I am <br/> computer Specialist.
+                    </h5>
+    
+                    <h5 class="p-md-1">
+                        mziqbal@outlook.com    
+                    </h5>
+    
+                    <section class="professional-logos">
+                        <ul class="p-md-3">
+                            <li> <a href="#"> <i class="fas fa-code"></i> </a></li>
+                            <li> <a href="#"> <i class="fab fa-css3-alt"></i> </a></li>
+                            <li> <a href="#"> <i class="fab fa-html5"></i> </a></li>
+                            <li> <a href="#"> <i class="fab fa-windows"></i> </a></li>      
+                        </ul>
+                    </section>
+                </div>
+            </aside>
+        </div>
+
+    </div>
+    
+    <footer class="p-md-5">
+        <div class="row justify-content-around">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 align-self-start">
+                <p>
+                    &reg; All Rights Reserved by &copy; Muhammad Zafar Iqbal <br>
+                    Website was updates last time on May 05, 2021
+                </p>
+            </div>
+            <section class="col-lg-5 col-md-5 col-sm-12 col-xs-12 align-self-end">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/muhammadzafariqbalnazir" target="_blank"> <i class="fab fa-linkedin"></i> </a> </li>
+                    <li><a href="https://www.facebook.com/mzn.go/" target="_blank"> <i class="fab fa-facebook"></i> </a> </li>
+                    <li><a href="https://www.tumblr.com/settings/blog/muhammadzafariqbalnazir" target="_blank"> <i class="fab fa-tumblr-square"></i> </a> </li>
+                    <li><a href="mailto:mziqbal909@outlook.com" > <i class="material-icons" id="email_Icon">email</i> </a> </li>
+                    <li><a href="tel:+36303464877" > <i class="fas fa-mobile"></i> </a> </li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</body>
+<script src="../javascript/menu-toggle.js"></script>
+</html>

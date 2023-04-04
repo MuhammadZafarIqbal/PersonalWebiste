@@ -1,0 +1,58 @@
+@import url("./common.css");
+
+#profile_picture {
+    width: 65%;
+    height: 70%; 
+}
+
+#profile_picture:hover {
+    transform: scale(1.02); 
+}
+
+@media screen and (max-width: 1200px){
+    nav {
+        width: 14%;
+        height: 45%;
+    }
+    #menu a{
+        height: 45px; 
+    }
+}
+
+@media screen and (max-width: 992px){
+    nav {
+        width: 14%;
+        height: 45%;
+    }
+    #menu a{
+        height: 45px; 
+    }
+}
+
+@media screen and (max-width: 768px){
+    #toggle-menu {
+        margin-top: -5%;
+        margin-left: 5%;
+    }
+
+    main {
+        padding-left: 5%;
+    }
+    footer {
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    main {
+        padding: 5%;
+    }
+    footer {
+        padding: 5%;
+    }
+    aside {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,117 @@
+@import url("./common.css");
+
+thead, tbody {
+    font-size: 3vh;
+}
+
+main {
+    width: 90%
+}
+
+tr:hover{
+    color: orange;
+}
+
+@media screen and (max-width: 1200px){
+    nav {
+        width: 14%;
+        height: 45%;
+    }
+    #menu a{
+        height: 45px; 
+    }
+    main {
+        width: 90%
+    }
+}
+
+@media screen and (max-width: 992px){
+    nav {
+        width: 14%;
+        height: 45%;
+    }
+    #menu a{
+        height: 45px; 
+    }
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #toggle-menu {
+        margin-top: -5%;
+        margin-left: 5%;
+    }
+
+    main {
+        padding: 5%;
+        width: 100%;
+    }
+    footer {
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    main {
+        padding: 5%;
+    }
+    footer {
+        padding: 5%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    /*for mobiles only*/
+
+    #menu{
+        visibility: hidden;
+    }
+    nav {
+        display: none;
+    }
+
+    button {
+        line-height: 10px;
+    }
+    #toggle-menu {
+        color: rgb(255, 0, 98);
+        font-size: 4em;
+        border: 0px;
+        background-color: transparent;
+        display: block;
+        cursor: pointer;
+    }
+    #toggle-menu:hover {
+        color: white;
+    }
+
+    #small-nav-show {
+        display: none;
+    }
+    
+    .small-navigation {
+        display: block;
+        background: #222;
+    }
+    
+    .small-navigation-menu-item {
+        padding: 5px;
+        font-size: 150%;
+        padding-left: 10%;
+    }
+
+    .small-navigation a {
+        color: white;
+    }
+
+    .small-navigation-menu-item:hover {
+        color: rgb(255, 0, 98);
+    }
+
+    .small-nav-active a{
+        color: rgb(255, 0, 98);
+    }
+}

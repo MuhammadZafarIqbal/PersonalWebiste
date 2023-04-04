@@ -1,0 +1,307 @@
+
+
+body {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p, q {
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+q {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.background-black-white{
+    background-color: black;
+    color: white;
+}
+
+.background-black-berry {
+    background: black;
+    color:rgb(255, 0, 98);
+}
+
+.background-beige {
+    background-color: rgb(253, 238, 200);
+}
+
+.background-gray-black {
+    background: rgb(73, 72, 72);
+    color: black;
+}
+
+header h2 {
+    font-size: 8vh;
+}
+
+h2, h3 {
+    color:rgb(255, 0, 98);
+    /*
+    color : rgb(34, 163, 159);
+    */
+}
+
+#line {
+    color:rgb(255, 0, 98);
+    height: 2.5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+#lead { 
+    text-align: center; 
+    color: white;
+    /*
+    color: #727878; 
+    */
+}
+
+
+
+/*Old navbar work*/
+/*
+.fixed {
+    position: fixed;
+    top: 100px;
+    height: 0%;
+    width: 0%;
+}
+
+
+.navbar  { 
+    background-color: black; 
+    float: none;
+    position: absolute; 
+    top: 10vh;
+    width: 0%;
+    left: 0;
+}
+
+.navbar .nav > li a { 
+    display: block;  
+    height: 60px; 
+    text-align: left; 
+    font-weight: 600; 
+    color: white;
+    font-size: 3vh;
+}
+
+.navbar .nav > li a:hover, .navbar .nav > .active > a { 
+    color:rgb(255, 0, 98);
+}
+*/
+
+footer {
+    width: 100%;
+    color:rgb(255, 0, 98);
+}
+
+a:link {
+    color:rgb(255, 0, 98);
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    transform: scale(1.1);
+}
+
+a img:hover {
+    transform: scale(1.2); 
+}
+
+a img:visited {
+    color: white;
+}
+
+ 
+.fab, .fas, .far {
+     font-size: 400%;
+     color: rgb(255, 0, 98);
+}
+ 
+.fab:hover, .fas:hover, .far:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+#email_Icon{
+    font-size: 400%;
+}
+
+#email_Icon:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    float: left;
+    padding-left: 30px;
+} 
+
+/*
+.navbar-toggler-icon {
+    color: white;
+    font-size: 300%;
+    margin-bottom: 0%;
+    padding: 0%;
+}
+*/
+
+@media screen and (max-width: 1200px){
+    .fab, .fas, .far{
+        font-size: 350%; 
+    } 
+    #email_Icon{
+        font-size: 350%;
+    }
+    li {
+        padding-left: 15px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .fab, .fas, .far{
+        font-size: 250%;
+    } 
+    #email_Icon{
+        font-size: 250%;
+    }
+    li {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .fab, .fas, .far{
+        font-size: 300%;
+    } 
+    #email_Icon{
+        font-size: 300%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .fab, .fas, .far{
+        font-size: 200%; 
+    } 
+    #email_Icon{
+        font-size: 200%;
+    }
+}
+
+/*nav bar work from here*/
+
+nav {
+    position: fixed;
+    top:27vh;
+    left: 0%;
+    width: 15%;
+    height: 54%;
+    background: black;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#menu a{
+    display: inline-block;
+    height: 60px; 
+    text-align: left; 
+    font-weight: 600; 
+    color: white;
+    font-size: 3vh;
+}
+
+#menu {
+    visibility: visible;
+}
+
+#menu a:hover {
+    color:rgb(255, 0, 98);
+}
+
+#menu .active {
+    color: rgb(255, 0, 98);
+}
+
+button {
+    display: none; 
+}
+
+.small-navigation {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    /*for mobiles only*/
+
+    #menu{
+        visibility: hidden;
+    }
+    nav {
+        display: none;
+    }
+
+    button {
+        line-height: 10px;
+    }
+    #toggle-menu {
+        color: rgb(255, 0, 98);
+        font-size: 4em;
+        border: 0px;
+        background-color: transparent;
+        display: block;
+        cursor: pointer;
+    }
+    #toggle-menu:hover {
+        color: white;
+    }
+
+    #small-nav-show {
+        display: none;
+    }
+    
+    .small-navigation {
+        display: block;
+        background: #222;
+        padding: 1%;
+    }
+    
+    .small-navigation-menu-item {
+        padding: 5px;
+        font-size: 150%;
+        padding-left: 10%;
+    }
+
+    .small-navigation a {
+        color: white;
+    }
+
+    .small-navigation-menu-item:hover {
+        color: rgb(255, 0, 98);
+    }
+
+    .small-nav-active a{
+        color: rgb(255, 0, 98);
+    }
+}
